@@ -32,3 +32,27 @@ git add .
 git commit -m "Jenkins init pass"
 ```
 
+
+
+# Delete Jenkins
+
+1. Stop container
+```bash
+cd Jenkins
+docker-compose stop jenkins
+```
+2. Remove container(volume,images)
+
+```bash
+cd Jenkins
+docker-compose rm jenkins
+docker volume rm jenkins_jenkins-docker-certs
+docker image rm jenkins_jenkins
+docker image rm jenkins:2.60.3
+```
+
+3. Remove directory
+```bash
+cd ..
+cd -R ./Jenkins
+```
