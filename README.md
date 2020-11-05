@@ -8,7 +8,7 @@ Typical configuration needs for deploying Jenkins in a docker container.
 __Mandatory requirements__
 - Installed Cocker CE + docker-compose
 
-### See  [DevOps Readme](other_file.md)
+### See  [DevOps Readme](README-DEVOPS.md)
 
 
 
