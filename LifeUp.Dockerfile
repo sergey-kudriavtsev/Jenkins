@@ -1,4 +1,5 @@
-FROM jenkins:2.60.3
+FROM jenkins/jenkins:2.249.3-slim
+
 USER root
 RUN apt-get update && apt-get install -y apt-transport-https \
        ca-certificates curl gnupg2 \

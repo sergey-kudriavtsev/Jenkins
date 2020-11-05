@@ -48,7 +48,7 @@ cd Jenkins
 docker-compose rm jenkins
 docker volume rm jenkins_jenkins-docker-certs
 docker image rm jenkins_jenkins
-docker image rm jenkins:2.60.3
+docker image rm jenkins/jenkins:2.249.3-slim
 ```
 
 3. Remove directory
