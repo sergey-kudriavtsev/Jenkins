@@ -10,8 +10,11 @@ services:
         dockerfile: LifeUp.Dockerfile
         args:
             buildno: 1
+    #image: Jenkins:LifeUp
 
     restart: unless-stopped
+
+    container_name: Jenkins_LifeUp
 
     networks:
         - jenkins
@@ -40,5 +43,6 @@ services:
 
 networks: 
     jenkins:
-        #TODO: add name
+        name: jenkins_network
+        
 

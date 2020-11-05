@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.249.2-slim
+FROM jenkins/jenkins:2.249.3-slim
 USER root
 RUN apt-get update && apt-get install -y apt-transport-https \
        ca-certificates curl gnupg2 \
@@ -11,3 +11,5 @@ RUN add-apt-repository \
 RUN apt-get update && apt-get install -y docker-ce-cli
 USER jenkins
 RUN jenkins-plugin-cli --plugins blueocean:1.24.3
+
+RUN jenkins-plugin-cli --plugins kubernetes:1.27.4
